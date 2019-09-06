@@ -1,8 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useEffect } from 'react'
+import axios from 'axios'
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-class HelloWorld extends Component {
+
+
+const fetchData = async () => {
+  const response = await axios.get(``)
+
+
   render() {
-    return <h1>Hello, World!</h1>
+    return 
+    <>
+    <h1>Hello, World!</h1>
+    </>
   }
 }
 
