@@ -9,13 +9,13 @@ const NavBar = () => {
   return (
     <nav>
       <ul>
-        <Link to='/pages/HomePage'>
+        <Link style={navStyle} to='/pages/HomePage'>
           <li>Home</li>
         </Link>
-        <Link to='/pages/About.js'>
+        <Link style={navStyle} to='/pages/About.js'>
           <li>About</li>
         </Link>
-        <Link to='/about'>
+        <Link style={navStyle} to='/about'>
           <li>Our Employees</li>
         </Link>
       </ul>
