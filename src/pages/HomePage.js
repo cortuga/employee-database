@@ -1,17 +1,23 @@
-import React, { Component, useState, useEffect } from "react"
-// import axios from 'axios'
-// import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React, { useState, useEffect } from "react"
+import axios from "axios"
+import { Link } from "react-router-dom"
 
-// // const fetchData = async () => {
-// //   const response = await axios.get(``)
+const HomePage = () => {
+  const [info, setInfo] = useState([])
 
-//   render() {
-//     return
-//     <>
-//     <h1>
-//       Welcome to this Company home page dear kind sir!</h1>
-//     </>
-//   }
-// }
+  const fetchInfo = async () => {
+    const response = await axios.get(
+      "https://sdg-staff-directory-app.herokuapp.com/api/HomelessMagicians/Employees"
+    )
+    setInfo(response.data)
+    console.log(response.data, "info")
+  }
 
-// export default HomePage
+  return (
+    <>
+      <h1>Home Page!!!</h1>
+    </>
+  )
+}
+
+export default HomePage
