@@ -3,7 +3,6 @@ import HomePage from "./pages/HomePage"
 import EmployeeDetailsPage from "./pages/EmployeeDetailsPage"
 import About from "./pages/About"
 import EmployeeListPage from "./pages/EmployeeListPage"
-import EmployeeDetailsPage from "./pages/EmployeeDetailsPage"
 import AddEmployee from "./pages/AddEmployeePage"
 import NavBar from "./components/NavBar"
 
@@ -15,6 +14,7 @@ class App extends Component {
       <>
         <Router>
           <NavBar />
+
           <Switch>
             <Route path='/pages/HomePage' exact component={HomePage}></Route>
 
