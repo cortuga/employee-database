@@ -1,7 +1,17 @@
 import React from "react"
 
-const AddEmployee = () => {
-  return <div></div>
+const AddEmployeePage = () => {
+  return (
+    <main>
+      <h2>New Employee Request</h2>
+      <body>
+        <input type='text' placeholder='First Name'></input>
+        <input type='text' placeholder='Last Name'></input>
+        <input type='text' placeholder='Job title'></input>
+        <button>Submit</button>
+      </body>
+    </main>
+  )
 }
 
-export default AddEmployee
+export default AddEmployeePage

@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage"
 import EmployeeDetailsPage from "./pages/EmployeeDetailsPage"
 import About from "./pages/About"
 import EmployeeListPage from "./pages/EmployeeListPage"
-import AddEmployee from "./pages/AddEmployeePage"
+import AddEmployeePage from "./pages/AddEmployeePage"
 import NavBar from "./components/NavBar"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
@@ -27,7 +27,7 @@ class App extends Component {
 
             <Route
               path='/pages/AddEmployeePage'
-              component={AddEmployee}
+              component={AddEmployeePage}
             ></Route>
 
             <Route

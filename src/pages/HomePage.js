@@ -7,7 +7,7 @@ const HomePage = () => {
 
   const fetchInfo = async () => {
     const response = await axios.get(
-      "https://sdg-staff-directory-app.herokuapp.com/api/HomelessMagicians/Employees"
+      "https://sdg-staff-directory-app.herokuapp.com/api/Company/E%20Corp"
     )
     setInfo(response.data)
     console.log(response.data, "info")
@@ -16,6 +16,10 @@ const HomePage = () => {
   return (
     <>
       <h1>Home Page!!!</h1>
+      <h2>company name and stuff</h2>
+      <section>
+        <p>{info}</p>
+      </section>
     </>
   )
 }

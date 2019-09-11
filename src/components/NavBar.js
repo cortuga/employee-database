@@ -18,7 +18,7 @@ const NavBar = () => {
           <li>View All Employees</li>
         </Link>
 
-        <Link to='/AddEmployeePage'>Add Employee</Link>
+        <Link to='/pages/AddEmployeePage'>Add Employee</Link>
       </ul>
     </nav>
   )
